@@ -1,0 +1,122 @@
+
+body { font-family: Arial, sans-serif; 
+ background-color: #f4f8fb; 
+ color: #222; 
+ margin: 0; 
+ padding: 0; 
+ min-height: 100vh; 
+ display: flex; 
+ flex-direction: column; 
+}
+
+header { 
+ background: linear-gradient(to right, #4facfe, #00f2fe); 
+ color: white; 
+ padding: 40px 20px; 
+ text-align: center; 
+ box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+}
+
+header h1 { 
+ font-size: 4.5em; 
+ margin-bottom: 20px; 
+}
+
+header p { 
+ font-size: 1.5em; 
+ max-width: 900px; 
+ margin: 0 auto; 
+}
+
+nav { 
+ background-color: #ffffff; 
+ padding: 40px 0; 
+ text-align: center; 
+ box-shadow: 0 1px 3px rgba(0,0,0,0.05); 
+}
+
+nav ul { 
+ list-style: none; 
+ padding: 0; 
+ margin: 0; 
+}
+
+nav li { 
+ display: inline-block; 
+ margin: 0 30px; 
+}
+
+nav a { 
+ text-decoration: none; 
+ color: #0077cc; 
+ font-size: 2em; 
+ font-weight: bold; 
+ transition: color 0.3s; 
+}
+
+nav a:hover { 
+ color: #005fa3; 
+}
+
+.spacer { 
+ flex-grow: 1; 
+}
+
+footer { 
+ background: #e0f3ff; 
+ padding: 20px; 
+ text-align: center; 
+ font-size: 1em; 
+ color: #333; 
+ border-top: 1px solid #cce7f5; 
+}
+
+
+
+.cards {
+  list-style: none;
+  margin: 20px auto;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  max-width: 1200px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  border: 1px solid #e9eef3;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+.card strong {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 1.05rem;
+  background: #e9f5ff;
+  padding: 2px 8px;
+  border-radius: 999px;
+  margin-bottom: 6px;
+}
+
+.card code {
+  display: block;
+  margin-top: 8px;
+  padding: 10px 12px;
+  background: #0b10211a;
+  border: 1px dashed #cfd9e3;
+  border-radius: 12px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.9rem;
+  word-break: break-word;
+  white-space: pre-wrap;
+}
+
